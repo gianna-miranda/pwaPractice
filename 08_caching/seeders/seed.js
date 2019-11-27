@@ -1,7 +1,8 @@
+require('dotenv').config()
 var mongoose = require("mongoose");
 var db = require("../models");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/imageperformance", {
+mongoose.connect(process.env.ATLAS_URI || "mongodb://localhost/imageperformance", {
   useNewUrlParser: true
 });
 
